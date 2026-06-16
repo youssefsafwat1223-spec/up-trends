@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #050B14;
+  --color-brand-surface: #081827;
+  --color-brand-navy: #0A2540;
+  --color-brand-blue: #0B7BFF;
+  --color-brand-cyan: #25D9FF;
+  --color-brand-red: #EF233C;
+  --color-brand-white: #FFFFFF;
+  --color-brand-muted: #A7B3C4;
+  
+  --font-sans: 'Manrope', 'Inter', system-ui, sans-serif;
+  --font-arabic: 'Tajawal', 'IBM Plex Sans Arabic', sans-serif;
+}
+
+/* Global Reset & Base */
+html {
+  scroll-behavior: smooth;
+  background-color: #050B14;
+  color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  background-color: #050B14;
+  color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050B14;
+}
+::-webkit-scrollbar-thumb {
+  background: #081827;
+  border-radius: 4px;
+  border: 1px solid rgba(11, 123, 255, 0.1);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0B7BFF;
+}
+
+/* Custom Glassmorphism Panels */
+.glass-panel {
+  background: rgba(8, 24, 39, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(11, 123, 255, 0.12);
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(37, 217, 255, 0.35);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.5), 0 0 20px rgba(11, 123, 255, 0.15);
+  background: rgba(8, 24, 39, 0.85);
+  transform: translateY(-4px);
+}
+
+/* Custom Animated Glows */
+.gradient-glow-blue {
+  background: radial-gradient(circle at 50% 50%, rgba(11, 123, 255, 0.18) 0%, rgba(37, 217, 255, 0.05) 50%, rgba(5, 11, 20, 0) 100%);
+}
+
+.gradient-glow-red {
+  background: radial-gradient(circle at 50% 50%, rgba(239, 35, 60, 0.1) 0%, rgba(5, 11, 20, 0) 70%);
+}
+
+/* Text selections */
+::selection {
+  background-color: rgba(11, 123, 255, 0.3);
+  color: #FFFFFF;
+}
+
+/* Upward floating animations */
+@keyframes floatUp {
+  0% {
+    transform: translateY(20px) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.6;
+  }
+  85% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-120px) rotate(3deg);
+    opacity: 0;
+  }
+}
+
+.animate-float-up {
+  animation: floatUp 12s infinite linear;
+}
+
+/* Custom glow borders */
+.glow-border-blue {
+  box-shadow: inset 0 0 12px rgba(11, 123, 255, 0.1);
+}
+
+.glow-border-red {
+  box-shadow: inset 0 0 12px rgba(239, 35, 60, 0.1);
+}
+
+/* Clean utility to disable scrolling when mobile menu open */
+.no-scroll {
+  overflow: hidden;
+}
