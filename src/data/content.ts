@@ -448,7 +448,7 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
     contactSuccess: "Thanks! Your request has been logged successfully. We'll contact you soon.",
     contactDetailsTitle: "Contact Details",
     contactPhoneVal: "+964 770 000 0000",
-    contactEmailVal: "hello@uptrend.iq",
+    contactEmailVal: "uptrendmarketing@gmail.com",
     contactLocationVal: "Baghdad, Iraq (Serving all Iraqi businesses)",
 
     footerDesc: "UP TREND is Iraq's premium growth-focused marketing agency. We build strategy, content, paid campaigns, and digital products that turn attention into revenue.",
@@ -788,7 +788,7 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
     contactSuccess: "شكراً لك! تم تسجيل معلوماتك بنجاح، سنتواصل معك قريباً.",
     contactDetailsTitle: "معلومات الاتصال",
     contactPhoneVal: "+964 770 000 0000",
-    contactEmailVal: "hello@uptrend.iq",
+    contactEmailVal: "uptrendmarketing@gmail.com",
     contactLocationVal: "بغداد، العراق (نخدم كافة المحافظات العراقية)",
 
     footerDesc: "المتجه الصاعد هي الوكالة التسويقية الأبرز في العراق للنمو وتطوير العلامات التجارية. نصنع الاستراتيجيات، المحتوى، الحملات الممولة، والمنتجات الرقمية التي تحول الانتباه إلى عوائد حقيقية.",

@@ -15,7 +15,7 @@ import { Footer } from "./components/Footer";
 import { contentData } from "./data/content";
 
 function App() {
-  const [lang, setLang] = useState<"en" | "ar">("en");
+  const [lang, setLang] = useState<"en" | "ar">("ar");
   const t = contentData[lang];
 
   // Set document direction and language code based on current language

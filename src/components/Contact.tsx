@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Phone, Mail, MapPin, Send, MessageSquare, CheckCircle, AlertCircle } from "lucide-react";
+import { Mail, MapPin, Send, MessageSquare, CheckCircle, AlertCircle } from "lucide-react";
 import type { TranslationModel } from "../data/content";
 
 interface ContactProps {
@@ -109,22 +109,9 @@ export const Contact: React.FC<ContactProps> = ({ t, lang }) => {
 
             {/* Visual info cards */}
             <div className="flex flex-col gap-6 mb-12">
-              <div
-                className="flex items-center gap-4 p-4 rounded-2xl bg-brand-surface/40 border border-brand-blue/10 transition-all duration-300"
-              >
-                <div className="p-3 bg-brand-surface rounded-xl border border-brand-blue/15 text-brand-cyan">
-                  <Phone className="w-5 h-5" />
-                </div>
-                <div>
-                  <span className={`block text-xs text-brand-muted ${lang === "ar" ? "font-arabic" : "font-sans"}`}>
-                    {lang === "en" ? "Phone" : "الهاتف"}
-                  </span>
-                  <span className="text-sm font-bold text-white ltr">{t.contactPhoneVal}</span>
-                </div>
-              </div>
 
               <a
-                href="mailto:hello@uptrend.iq"
+                href="mailto:uptrendmarketing@gmail.com"
                 className="flex items-center gap-4 p-4 rounded-2xl bg-brand-surface/40 hover:bg-brand-surface border border-brand-blue/10 hover:border-brand-blue/20 transition-all duration-300"
               >
                 <div className="p-3 bg-brand-surface rounded-xl border border-brand-blue/15 text-brand-cyan">
@@ -156,11 +143,7 @@ export const Contact: React.FC<ContactProps> = ({ t, lang }) => {
 
           {/* Right Column: Interactive Form */}
           <div className="lg:col-span-7 glass-panel p-8 md:p-10 rounded-3xl border border-brand-blue/10 relative overflow-hidden">
-            <h3 className={`text-xl font-bold text-white mb-8 border-b border-brand-blue/10 pb-4 ${
-              lang === "ar" ? "font-arabic" : "font-sans"
-            }`}>
-              {lang === "en" ? "Tell us about your project" : "أخبرنا عن مشروعك"}
-            </h3>
+
 
             {errorMsg && (
               <div className="p-4 bg-brand-red/10 border border-brand-red/25 rounded-xl flex items-center gap-2.5 text-sm text-brand-red mb-6">
