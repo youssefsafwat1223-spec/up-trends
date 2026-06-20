@@ -142,7 +142,7 @@ export const Contact: React.FC<ContactProps> = ({ t, lang }) => {
           </div>
 
           {/* Right Column: Interactive Form */}
-          <div className="lg:col-span-7 glass-panel p-8 md:p-10 rounded-3xl border border-brand-blue/10 relative overflow-hidden">
+          <div className="lg:col-span-7 glass-panel p-6 md:p-10 rounded-3xl border border-brand-blue/10 relative overflow-hidden">
 
 
             {errorMsg && (
@@ -187,66 +187,7 @@ export const Contact: React.FC<ContactProps> = ({ t, lang }) => {
                 </div>
               </div>
 
-              {/* Row 2: Business Type & Service */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex flex-col gap-2">
-                  <label className={`text-xs font-semibold text-brand-muted ${lang === "ar" ? "font-arabic" : "font-sans"}`}>
-                    {t.contactTypeLabel}
-                  </label>
-                  <select
-                    name="businessType"
-                    value={formData.businessType}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 bg-brand-surface/65 rounded-xl border border-brand-blue/15 focus:border-brand-cyan/60 text-white text-sm focus:outline-none focus:ring-1 focus:ring-brand-cyan/20 transition-all duration-300 cursor-pointer"
-                  >
-                    <option value="" disabled>{t.contactTypePlaceholder}</option>
-                    {t.contactTypeOptions.map((opt, idx) => (
-                      <option key={idx} value={opt} className="bg-brand-surface text-white">
-                        {opt}
-                      </option>
-                    ))}
-                  </select>
-                </div>
 
-                <div className="flex flex-col gap-2">
-                  <label className={`text-xs font-semibold text-brand-muted ${lang === "ar" ? "font-arabic" : "font-sans"}`}>
-                    {t.contactServiceLabel}
-                  </label>
-                  <select
-                    name="service"
-                    value={formData.service}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 bg-brand-surface/65 rounded-xl border border-brand-blue/15 focus:border-brand-cyan/60 text-white text-sm focus:outline-none focus:ring-1 focus:ring-brand-cyan/20 transition-all duration-300 cursor-pointer"
-                  >
-                    <option value="" disabled>{t.contactServicePlaceholder}</option>
-                    {t.contactServiceOptions.map((opt, idx) => (
-                      <option key={idx} value={opt} className="bg-brand-surface text-white">
-                        {opt}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-
-              {/* Budget Option */}
-              <div className="flex flex-col gap-2">
-                <label className={`text-xs font-semibold text-brand-muted ${lang === "ar" ? "font-arabic" : "font-sans"}`}>
-                  {t.contactBudgetLabel}
-                </label>
-                <select
-                  name="budget"
-                  value={formData.budget}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 bg-brand-surface/65 rounded-xl border border-brand-blue/15 focus:border-brand-cyan/60 text-white text-sm focus:outline-none focus:ring-1 focus:ring-brand-cyan/20 transition-all duration-300 cursor-pointer"
-                >
-                  <option value="" disabled>{t.contactBudgetPlaceholder}</option>
-                  {t.contactBudgetOptions.map((opt, idx) => (
-                    <option key={idx} value={opt} className="bg-brand-surface text-white">
-                      {opt}
-                    </option>
-                  ))}
-                </select>
-              </div>
 
               {/* Message */}
               <div className="flex flex-col gap-2">
