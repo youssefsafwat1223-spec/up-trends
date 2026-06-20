@@ -34,7 +34,7 @@ export const Contact: React.FC<ContactProps> = ({ t, lang }) => {
 
     // Simple validation
     if (!formData.name.trim() || !formData.phone.trim()) {
-      setErrorMsg(lang === "en" ? "Name and Phone / WhatsApp number are required." : "الاسم ورقم الهاتف / الواتساب مطلوبان.");
+      setErrorMsg(lang === "en" ? "Name and phone number are required." : "الاسم ورقم الهاتف مطلوبان.");
       return;
     }
 
@@ -44,25 +44,6 @@ export const Contact: React.FC<ContactProps> = ({ t, lang }) => {
     setTimeout(() => {
       setIsSubmitting(false);
       setShowToast(true);
-
-      // Create structured WhatsApp message
-      const whatsappText = `*UP TREND - New Consultation Request*
-----------------------------------
-*Name:* ${formData.name}
-*Phone/WhatsApp:* ${formData.phone}
-*Business Type:* ${formData.businessType || "Not Specified"}
-*Service Requested:* ${formData.service || "Not Specified"}
-*Budget Range:* ${formData.budget || "Not Specified"}
-*Message/Goals:* ${formData.message || "None"}
-----------------------------------
-_Generated from uptrend.iq_`;
-
-      const agencyPhone = "9647700000000"; // Replace with real agency WhatsApp number
-      const encodedText = encodeURIComponent(whatsappText);
-      const whatsappUrl = `https://wa.me/${agencyPhone}?text=${encodedText}`;
-
-      // Open WhatsApp link
-      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
 
       // Reset form
       setFormData({
@@ -128,22 +109,19 @@ _Generated from uptrend.iq_`;
 
             {/* Visual info cards */}
             <div className="flex flex-col gap-6 mb-12">
-              <a
-                href="https://wa.me/9647700000000"
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-4 p-4 rounded-2xl bg-brand-surface/40 hover:bg-brand-surface border border-brand-blue/10 hover:border-brand-blue/20 transition-all duration-300"
+              <div
+                className="flex items-center gap-4 p-4 rounded-2xl bg-brand-surface/40 border border-brand-blue/10 transition-all duration-300"
               >
                 <div className="p-3 bg-brand-surface rounded-xl border border-brand-blue/15 text-brand-cyan">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <span className={`block text-xs text-brand-muted ${lang === "ar" ? "font-arabic" : "font-sans"}`}>
-                    {lang === "en" ? "WhatsApp / Phone" : "الواتساب / الهاتف"}
+                    {lang === "en" ? "Phone" : "الهاتف"}
                   </span>
                   <span className="text-sm font-bold text-white ltr">{t.contactPhoneVal}</span>
                 </div>
-              </a>
+              </div>
 
               <a
                 href="mailto:hello@uptrend.iq"

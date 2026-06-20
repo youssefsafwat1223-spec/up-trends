@@ -281,7 +281,7 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
           "12 High-Quality Posts per Month",
           "Basic Content Copywriting (Iraqi Arabic & EN)",
           "Monthly Growth Analytics Review",
-          "WhatsApp Communication Channel"
+          "Dedicated Communication Channel"
         ]
       },
       {
@@ -338,7 +338,7 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
         description: "Transparent data showing exactly where your money went and what results it achieved."
       },
       {
-        title: "Fast WhatsApp Communication",
+        title: "Fast & Direct Communication",
         description: "A dedicated responsive team that keeps you updated and handles requests immediately."
       }
     ],
@@ -386,7 +386,7 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
       },
       {
         question: "How do we start?",
-        answer: "Simple! You can contact us via WhatsApp or submit the contact form on our website. We will schedule a free consultation session to discuss your business goals and recommend the best roadmap."
+        answer: "Simple! You can email us or submit the contact form on our website. We will schedule a free consultation session to discuss your business goals and recommend the best roadmap."
       },
       {
         question: "Do you work with small businesses?",
@@ -400,14 +400,14 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
 
     finalCtaTitle: "Ready to move your brand upward?",
     finalCtaSubtitle: "Tell us about your business and we’ll help you choose the right marketing direction.",
-    finalCtaWhatsApp: "WhatsApp Us",
+    finalCtaWhatsApp: "Contact Us",
     finalCtaConsult: "Request Free Consultation",
 
     contactTitle: "Get in Touch",
     contactSubtitle: "Start your journey to predictable growth today. Let's discuss your marketing strategy.",
     contactNameLabel: "Full Name",
     contactNamePlaceholder: "e.g., Ali Ahmed",
-    contactPhoneLabel: "Phone / WhatsApp",
+    contactPhoneLabel: "Phone Number",
     contactPhonePlaceholder: "e.g., +964 770 123 4567",
     contactTypeLabel: "Business Type",
     contactTypePlaceholder: "Select your industry...",
@@ -444,8 +444,8 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
     ],
     contactMessageLabel: "Message / Tell us about your goals",
     contactMessagePlaceholder: "Briefly explain what you'd like to achieve...",
-    contactSubmit: "Submit & Message on WhatsApp",
-    contactSuccess: "Thanks! Your request has been logged. Let's chat on WhatsApp.",
+    contactSubmit: "Submit Request",
+    contactSuccess: "Thanks! Your request has been logged successfully. We'll contact you soon.",
     contactDetailsTitle: "Contact Details",
     contactPhoneVal: "+964 770 000 0000",
     contactEmailVal: "hello@uptrend.iq",
@@ -468,7 +468,7 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
     navCTA: "احصل على استشارة مجانية",
 
     heroHeadline: "خلّي براندك يصعد بالسوق العراقي",
-    heroSubheadline: "UP TREND وكالة تسويق تساعد الشركات بالعراق تكبر بخطة واضحة، محتوى قوي، إعلانات مدفوعة، هوية بصرية، ومواقع احترافية.",
+    heroSubheadline: "المتجه الصاعد وكالة تسويق تساعد الشركات بالعراق تكبر بخطة واضحة، محتوى قوي، إعلانات مدفوعة، هوية بصرية، ومواقع احترافية.",
     heroCTAPrimary: "ابدأ خطة النمو",
     heroCTASecondary: "شوف خدماتنا",
     heroFloatingTags: ["سوشيال ميديا", "إعلانات ممولة", "هوية بصرية", "صناعة محتوى", "مواقع إلكترونية", "تحليلات وأرقام"],
@@ -621,7 +621,7 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
           "إنتاج ونشر 12 منشوراً عالي الجودة شهرياً",
           "كتابة نصوص تسويقية بالهجة العراقية والإنجليزية",
           "تقرير أداء وتحليلات نمو شهري مبسط",
-          "قناة تواصل وتنسيق مباشرة عبر الواتساب"
+          "قناة تواصل وتنسيق مباشرة"
         ]
       },
       {
@@ -654,7 +654,7 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
       }
     ],
 
-    whyTitle: "ليش UP TREND؟",
+    whyTitle: "ليش المتجه الصاعد؟",
     whySubtitle: "نجمع بين الفهم العميق للسوق العراقي والمعايير التسويقية العالمية لنحقق لك أعلى عائد على الاستثمار.",
     whyList: [
       {
@@ -678,7 +678,7 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
         description: "شفافية مطلقة وأرقام واضحة تبين وين راحت ميزانيتك التسويقية وشنو النتائج اللي جابتها."
       },
       {
-        title: "تواصل سريع عبر الواتساب",
+        title: "تواصل سريع ومباشر",
         description: "فريق مخصص ومتجاوب يسهل عليك التواصل ومتابعة مجريات العمل يومياً وبدون تأخير."
       }
     ],
@@ -702,10 +702,10 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
     testimonialsNote: "سيتم إضافة آراء حقيقية بعد الموافقة والاعتماد النهائي.",
 
     faqTitle: "الأسئلة الشائعة",
-    faqSubtitle: "إجابات واضحة ومباشرة عن طبيعة العمل والخدمات مع UP TREND في العراق.",
+    faqSubtitle: "إجابات واضحة ومباشرة عن طبيعة العمل والخدمات مع المتجه الصاعد في العراق.",
     faqList: [
       {
-        question: "شنو تسوي وكالة UP TREND؟",
+        question: "شنو تسوي وكالة المتجه الصاعد؟",
         answer: "احنا وكالة تسويق متكاملة بالعراق. نساعد الشركات تكبر عن طريق كتابة الاستراتيجيات، إدارة السوشيال ميديا، إطلاق الإعلانات الممولة، إنتاج الفيديوهات والريلز، تصميم الهويات البصرية، وبناء المواقع الإلكترونية السريعة."
       },
       {
@@ -726,7 +726,7 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
       },
       {
         question: "شلون نبدأ نشتغل سوية؟",
-        answer: "ببساطة! تكدر تتواصل ويانا على الواتساب أو تملي استمارة التواصل بالموقع. راح نحدد موعد جلسة استشارة مجانية ندرس بيها أهدافك ونقترح عليك أفضل خطة."
+        answer: "ببساطة! تكدر تملي استمارة التواصل بالموقع أو تراسلنا بالبريد الإلكتروني. راح نحدد موعد جلسة استشارة مجانية ندرس بيها أهدافك ونقترح عليك أفضل خطة."
       },
       {
         question: "هل تشتغلون مع المشاريع الصغيرة؟",
@@ -740,14 +740,14 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
 
     finalCtaTitle: "جاهز تصعّد براندك؟",
     finalCtaSubtitle: "احچيلنا عن مشروعك ونساعدك تختار الاتجاه التسويقي الصح.",
-    finalCtaWhatsApp: "راسلنا على الواتساب",
+    finalCtaWhatsApp: "راسلنا بالبريد",
     finalCtaConsult: "اطلب استشارة مجانية",
 
     contactTitle: "تواصل معنا",
     contactSubtitle: "ابدأ رحلتك نحو نمو واضح ومدروس اليوم. دعنا نناقش استراتيجية تسويق مشروعك.",
     contactNameLabel: "الاسم الكامل",
     contactNamePlaceholder: "مثال: علي أحمد",
-    contactPhoneLabel: "رقم الهاتف / الواتساب",
+    contactPhoneLabel: "رقم الهاتف",
     contactPhonePlaceholder: "مثال: 0770 123 4567",
     contactTypeLabel: "نوع النشاط التجاري",
     contactTypePlaceholder: "اختر قطاع عملك...",
@@ -784,17 +784,17 @@ export const contentData: Record<'en' | 'ar', TranslationModel> = {
     ],
     contactMessageLabel: "تفاصيل إضافية عن أهدافك ومشروعك",
     contactMessagePlaceholder: "اكتب باختصار ما الذي ترغب في تحقيقه...",
-    contactSubmit: "إرسال وتواصل عبر الواتساب",
-    contactSuccess: "شكراً لك! تم تسجيل معلوماتك، لندردش الآن على الواتساب لمتابعة التفاصيل.",
+    contactSubmit: "إرسال الطلب",
+    contactSuccess: "شكراً لك! تم تسجيل معلوماتك بنجاح، سنتواصل معك قريباً.",
     contactDetailsTitle: "معلومات الاتصال",
     contactPhoneVal: "+964 770 000 0000",
     contactEmailVal: "hello@uptrend.iq",
     contactLocationVal: "بغداد، العراق (نخدم كافة المحافظات العراقية)",
 
-    footerDesc: "أب تريند (UP TREND) هي الوكالة التسويقية الأبرز في العراق للنمو وتطوير العلامات التجارية. نصنع الاستراتيجيات، المحتوى، الحملات الممولة، والمنتجات الرقمية التي تحول الانتباه إلى عوائد حقيقية.",
+    footerDesc: "المتجه الصاعد هي الوكالة التسويقية الأبرز في العراق للنمو وتطوير العلامات التجارية. نصنع الاستراتيجيات، المحتوى، الحملات الممولة، والمنتجات الرقمية التي تحول الانتباه إلى عوائد حقيقية.",
     footerLinksTitle: "روابط سريعة",
     footerServicesTitle: "خدماتنا",
     footerContactTitle: "اتصل بنا",
-    footerCopyright: "© 2026 أب تريند. جميع الحقوق محفوظة."
+    footerCopyright: "© 2026 المتجه الصاعد. جميع الحقوق محفوظة."
   }
 };

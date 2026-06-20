@@ -11,7 +11,7 @@ import { Testimonials } from "./components/Testimonials";
 import { FAQ } from "./components/FAQ";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { WhatsAppCTA } from "./components/WhatsAppCTA";
+
 import { contentData } from "./data/content";
 
 function App() {
@@ -60,15 +60,14 @@ function App() {
         {/* FAQ Collapsible Accordions */}
         <FAQ t={t} lang={lang} />
 
-        {/* Call to Action Contact Form (with direct WhatsApp redirect compiler) */}
+        {/* Call to Action Contact Form */}
         <Contact t={t} lang={lang} />
       </main>
 
       {/* Footer copyright, nav redirects, & external socials */}
       <Footer t={t} lang={lang} />
 
-      {/* Floating CTA WhatsApp Pulse Trigger */}
-      <WhatsAppCTA lang={lang} />
+
     </div>
   );
 }

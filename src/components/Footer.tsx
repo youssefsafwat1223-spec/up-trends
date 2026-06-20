@@ -1,5 +1,5 @@
 import React from "react";
-import { Instagram, Facebook, Linkedin, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import logoDark from "../assets/logo_dark_bg.png";
 import type { TranslationModel } from "../data/content";
 
@@ -62,50 +62,8 @@ export const Footer: React.FC<FooterProps> = ({ t, lang }) => {
           <p className={`text-sm text-brand-muted leading-relaxed ${lang === "ar" ? "font-arabic text-right" : "font-sans"}`}>
             {t.footerDesc}
           </p>
-          
-          {/* Social Icons Placeholders */}
-          <div className="flex gap-4 items-center">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noreferrer"
-              className="p-2.5 rounded-lg bg-brand-surface border border-brand-blue/10 hover:border-brand-cyan/40 text-brand-muted hover:text-brand-cyan transition-all duration-300"
-              aria-label="Instagram"
-            >
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noreferrer"
-              className="p-2.5 rounded-lg bg-brand-surface border border-brand-blue/10 hover:border-brand-cyan/40 text-brand-muted hover:text-brand-cyan transition-all duration-300"
-              aria-label="Facebook"
-            >
-              <Facebook className="w-5 h-5" />
-            </a>
-            {/* Custom TikTok SVG icon */}
-            <a
-              href="https://tiktok.com"
-              target="_blank"
-              rel="noreferrer"
-              className="p-2.5 rounded-lg bg-brand-surface border border-brand-blue/10 hover:border-brand-cyan/40 text-brand-muted hover:text-brand-cyan transition-all duration-300"
-              aria-label="TikTok"
-            >
-              <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.86.95 2 1.63 3.25 1.95v3.91c-1.3-.17-2.5-.78-3.48-1.63v6.78c-.08 2.54-1.39 4.96-3.64 6.13-2.14 1.15-4.8 1.19-6.98.1-2.4-1.12-3.95-3.67-3.86-6.36.03-2.88 2.05-5.51 4.91-5.94.75-.12 1.52-.07 2.27.14v3.93c-.63-.23-1.33-.27-1.99-.08-1.04.28-1.84 1.25-1.92 2.33-.07 1.15.54 2.26 1.53 2.76 1 .5 2.22.41 3.12-.25.54-.42.84-1.07.82-1.76V.02z"/>
-              </svg>
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noreferrer"
-              className="p-2.5 rounded-lg bg-brand-surface border border-brand-blue/10 hover:border-brand-cyan/40 text-brand-muted hover:text-brand-cyan transition-all duration-300"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
-          </div>
         </div>
+
 
         {/* Quick links column */}
         <div className="lg:col-span-2 lg:col-start-6 flex flex-col gap-6">
